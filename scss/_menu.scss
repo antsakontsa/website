@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -43,7 +43,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.97;
     visibility: hidden;
 
     &.show {
@@ -116,7 +116,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 

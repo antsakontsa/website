@@ -1,4 +1,4 @@
-// Select DOM items
+// Select DOM items for hamburger
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');

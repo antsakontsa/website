@@ -57,6 +57,21 @@ main {
         
         a {
             padding: 0.4rem;
+
+            // facebook icon
+            &:nth-child(1) {
+                color: #1f418b;
+            }
+            
+            // linkedin icon
+            &:nth-child(2) {
+                color: rgb(0, 127, 196);
+            }
+            
+            // github icon
+            &:nth-child(3) {
+                color: #451a86;
+            }
             
             &:hover {
                 color: $secondary-color;

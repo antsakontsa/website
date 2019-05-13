@@ -122,7 +122,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(76, 76, 76, 0.5); }
 
 a {
   color: #fff;
@@ -189,10 +189,6 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
@@ -213,22 +209,29 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
     background: #eece1a;
     color: #000;
     transition: all 0.5s ease-out; }
 
-.btn-dark {
-  background: black;
-  color: #fff; }
-
 .btn-light {
   background: #c4c4c4;
   color: #333; }
+  .btn-light:hover .desc-text {
+    display: block; }
+
+.desc-text {
+  padding-top: 1rem;
+  display: none;
+  text-align: center; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
 
 #main-footer {
   text-align: center;
@@ -265,11 +268,11 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 75vh;
+    height: 60vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25vh;
+    height: 40vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portrait2.jpg");

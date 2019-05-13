@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/dist/contact.html -->
+<html lang="en" class="gr__127_0_0_1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <title>Contact Me</title>
+<link rel="stylesheet" href="./Contact Me_files/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><link rel="stylesheet" href="./Contact Me_files/main.css"></head>
+
+<body data-gr-c-s-loaded="true">
+    <header>
+        <div class="menu-btn close">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu show">
+            <div class="menu-branding show">
+                <div class="portrait"></div>
+            </div>
+
+            <ul class="menu-nav show">
+                <li class="nav-item show">
+                    <a href="http://127.0.0.1:5500/dist/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item show">
+                    <a href="http://127.0.0.1:5500/dist/about.html" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item show">
+                    <a href="http://127.0.0.1:5500/dist/work.html" class="nav-link">My work</a>
+                </li>
+                <li class="nav-item current show">
+                    <a href="http://127.0.0.1:5500/dist/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <h1 class="lg-heading">
+            Contact <span class="text-secondary">Me</span>
+        </h1>
+
+        <!-- grid items -->
+        <div class="boxes">
+            <div>
+                <span class="text-secondary">E-mail:</span>
+                anttiolavikuisma@gmail.com
+            </div>
+
+            <div>
+                <span class="text-secondary">Phone:</span>
+                0400 819 236
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright © <span id="year">2019</span> Antti Kuisma
+    </footer>
+
+    <script src="./Contact Me_files/main.js.lataus"></script>
+    <script src="./Contact Me_files/year.js.lataus"></script>
+    <!-- have to be separated from main, cause index.html dont have footer, so there it's causing error to console. -->
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

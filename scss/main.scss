@@ -27,7 +27,7 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        background: rgba(lighten($primary-color, 3), 0.5);
     }
 }
 
@@ -137,12 +137,6 @@ main {
     img {
         width: 100%;
         border: 3px #fff solid;
-
-        &:hover {
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
     }
 }
 
@@ -186,16 +180,26 @@ main {
     }
 }
 
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
-
 .btn-light {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
+
+    &:hover .desc-text {
+        display: block;
+    }
+}
+
+.desc-text {
+    padding-top: 1rem;
+    display: none;
+    text-align: center;
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
 }
 
 #main-footer {

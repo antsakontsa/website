@@ -221,13 +221,11 @@ main {
 .btn-light {
   background: #c4c4c4;
   color: #333; }
-  .btn-light:hover .desc-text {
-    display: block; }
 
 .desc-text {
-  padding-top: 1rem;
-  display: none;
-  text-align: center; }
+  display: none; }
+  .desc-text h3 {
+    padding-top: 1rem; }
 
 .btn-dark {
   background: black;

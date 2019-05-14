@@ -334,7 +334,7 @@ main {
   .projects {
     grid-template-columns: repeat(1, 1fr); }
   main#work h1 {
-    font-size: 70px; }
+    font-size: 60px; }
   main {
     align-items: center;
     text-align: center; }

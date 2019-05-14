@@ -184,14 +184,14 @@ main {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
-
-    &:hover .desc-text {
-        display: block;
-    }
 }
 
 .desc-text {
     display: none;
+
+    h3 {
+        padding-top: 1rem;
+    }
 }
 
 .btn-dark {

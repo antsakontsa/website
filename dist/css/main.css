@@ -166,7 +166,6 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 10%;
     border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -242,21 +241,31 @@ main {
   .projects {
     grid-template-columns: repeat(5, 1fr); }
   main#contact h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
     text-align: center; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  main#contact .lg-heading {
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+    font-size: 90px;
+    line-height: 1;
+    margin-bottom: 5rem; } }
 
 @media screen and (min-width: 631px) and (max-width: 768px) {
-  main {
+  main#contact .lg-heading {
     align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
+    text-align: center;
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 3rem;
+    margin-bottom: 5rem; }
+  main#contact div {
+    font-size: 24px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;

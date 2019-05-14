@@ -205,12 +205,6 @@ main {
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
 
 .btn, .btn-light, .btn-dark {
   display: block;
@@ -246,13 +240,19 @@ main {
     grid-template-columns: repeat(4, 1fr); }
   main#contact h1 {
     margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     text-align: center; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+  .bio {
+    text-align: left;
+    background: rgba(76, 76, 76, 0.5);
+    padding: 1rem; }
+    .bio h3 {
+      text-align: center; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   main#contact .lg-heading {
@@ -293,9 +293,17 @@ main {
     height: 40vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait2.jpg");
-      width: 150px;
-      height: 150px; }
+      width: 250px;
+      height: 250px;
+      background: url(../img/portrait.jpg);
+      border-radius: 50%;
+      border: solid 3px #eece1a; }
+  .bio {
+    text-align: left;
+    background: rgba(76, 76, 76, 0.5);
+    padding: 1rem; }
+    .bio h3 {
+      text-align: center; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -310,6 +318,12 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+  .bio {
+    text-align: left;
+    background: rgba(76, 76, 76, 0.5);
+    padding: 1rem; }
+    .bio h3 {
+      text-align: center; }
   main#contact h1 {
     font-size: 60px;
     margin-top: 3rem;

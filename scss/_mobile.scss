@@ -8,7 +8,7 @@
     // contact.html
     main#contact h1 {
         margin-top: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
         text-align: center;
     }
 }
@@ -26,6 +26,18 @@
 
         grid-template-columns: 1fr;
     }
+
+    //about.html
+    .bio {
+        text-align: left;
+        background: rgba(lighten($primary-color, 3), 0.5);
+        padding: 1rem;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
     // work.html
     .projects {
         grid-template-columns: repeat(3, 1fr);
@@ -94,9 +106,22 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait{
-            background: url('../img/portrait2.jpg');
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
+            background: url(../img/portrait.jpg);
+            border-radius: 50%;
+            border: solid 3px $secondary-color;
+        }
+    }
+    
+    //about.html
+    .bio {
+        text-align: left;
+        background: rgba(lighten($primary-color, 3), 0.5);
+        padding: 1rem;
+
+        h3 {
+            text-align: center;
         }
     }
 
@@ -138,6 +163,17 @@
         'job3';
 
         grid-template-columns: 1fr;
+    }
+
+    //about.html
+    .bio {
+        text-align: left;
+        background: rgba(lighten($primary-color, 3), 0.5);
+        padding: 1rem;
+
+        h3 {
+            text-align: center;
+        }
     }
     
     // contact.html /////

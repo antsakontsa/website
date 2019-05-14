@@ -1,9 +1,11 @@
 //Widescreens ////////////////////////////////////////////////////
 @include mediaXl {
+    // work.html
     .projects {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
+    // contact.html
     main#contact h1 {
         margin-top: 2rem;
         margin-bottom: 10rem;
@@ -13,9 +15,20 @@
 
 //Dekstops & laptops //////////////////////////////////////////////
 @include mediaLg {
+    //about.html
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
     // work.html
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     // contact.html
@@ -28,11 +41,22 @@
             line-height: 1;
             margin-bottom: 5rem;
         }
+        
+        div {
+            font-size: 33px;
+        }
     }
 }
 
 //Tablets & small laptops ///////////////////////////////////////////////
 @include mediaMd {
+    // index.html
+    main#home {
+        .lg-heading{
+            font-size: 80px;
+        }
+    }
+
     // contact.html
     main#contact {
         .lg-heading {
@@ -88,7 +112,7 @@
     }
 
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -103,7 +127,8 @@
     main#about h1 {
         font-size: 60px;
     }
-
+    
+    //about.html
     .about-info {
         grid-template-areas: 
         'bioimage'
@@ -129,7 +154,7 @@
 
     // work.html //////
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     // work.html //////
     main#work h1 {

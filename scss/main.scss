@@ -112,6 +112,7 @@ main {
     .job-1 {
         grid-area: job1;
     }
+    
     .job-2 {
         grid-area: job2;
     }
@@ -124,6 +125,12 @@ main {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+
+        h3 {
+            text-align: center;
+            color: $secondary-color;
+            text-transform: uppercase;
+        }
     }
 }
 

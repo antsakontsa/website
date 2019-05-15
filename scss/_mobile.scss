@@ -5,6 +5,13 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    // index.html
+    main#home {
+        .lg-heading {
+            font-size: 50px;
+        }
+    }
+
     // contact.html
     main#contact h1 {
         margin-top: 2rem;

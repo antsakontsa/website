@@ -172,6 +172,9 @@ main#home {
   color: #fff;
   height: 60px; }
 
+html {
+  height: auto; }
+
 * {
   box-sizing: border-box; }
 

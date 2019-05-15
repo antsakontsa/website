@@ -90,9 +90,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-body, html {
-  height: auto; }
-
 main#home {
   overflow: hidden; }
   main#home .lg-heading {

@@ -228,11 +228,11 @@
     }
 
     // index.html
-    html, body {
-        min-height: 100vh;
-    }
-    
     main#home {
+        html, body {
+            max-height: 100vh;
+        }
+
         .icons {
             text-align: center;
         }

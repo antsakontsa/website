@@ -341,8 +341,8 @@ main {
     text-align: center; }
   main#contact div {
     font-size: 16px; }
-  html, body {
-    min-height: 100vh; }
+  main#home html, main#home body {
+    max-height: 100vh; }
   main#home .icons {
     text-align: center; }
   main#work .projects {

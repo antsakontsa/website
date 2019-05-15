@@ -93,7 +93,7 @@
 main#home {
   overflow: hidden; }
   main#home .lg-heading {
-    margin-top: 10rem; }
+    margin-top: 30vh; }
 
 .about-info {
   display: grid;

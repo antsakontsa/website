@@ -341,10 +341,10 @@ main {
     text-align: center; }
   main#contact div {
     font-size: 16px; }
-  html, body {
+  main#home {
     min-height: 100vh; }
-  main#home .icons {
-    text-align: center; }
+    main#home .icons {
+      text-align: center; }
   main#work .projects {
     grid-template-columns: repeat(1, 1fr); }
   ul.menu-nav,

@@ -1,87 +1,8 @@
 @import 'config';
 @import 'menu';
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    @include background;
-    background-color: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-}
-
-//Headings
-h1, h2, h3 {
-    margin: 0;
-    font-weight: 400;
-    
-    &.lg-heading {
-        font-size: 6rem;
-    }
-    
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 3), 0.5);
-    }
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-}
-
-.text-secondary {
-    color: $secondary-color;
-}
-
-main {
-    // About page - evenif there are no boxes under bio, footer still sticks to the bottom.
-    min-height: calc(100vh - 60px);
-    
-    padding: 4rem;
-    
-    .icons {
-        margin-top: 1rem;
-        
-        a {
-            padding: 0.4rem;
-
-            // facebook icon
-            &:nth-child(1) {
-                color: #163679;
-            }
-            
-            // linkedin icon
-            &:nth-child(2) {
-                color: rgb(0, 127, 196);
-            }
-            
-            // github icon
-            &:nth-child(3) {
-                color: #451a86;
-            }
-            
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
-    }
-}
-
-#home {
+// index.html
+main#home {
     overflow: hidden;
     
     h1 {
@@ -89,7 +10,7 @@ main {
     }
 }
 
-// About me grid templates
+// about.html
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -125,7 +46,7 @@ main {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
-
+        
         h3 {
             text-align: center;
             color: $secondary-color;
@@ -134,26 +55,26 @@ main {
     }
 }
 
-// Work/Projects
+// work.html
 .projects {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
-
+    
     img {
         width: 100%;
         border: 3px #fff solid;
     }
 }
 
-// Contact page
+// contact.html
 .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
-
+    
     div {
         font-size: 2rem;
         border: 3px #fff solid;
@@ -163,12 +84,12 @@ main {
     }
 }
 
-// Button styles 
+// 
 .btn {
     display: block;
     padding: 0.5rem 1rem;
     margin-bottom: 0.3rem;
-
+    
     &:hover {
         background: $secondary-color;
         color: set-text-color($secondary-color);
@@ -184,7 +105,7 @@ main {
 
 .desc-text {
     display: none;
-
+    
     h3 {
         padding-top: 1rem;
     }
@@ -202,6 +123,82 @@ main {
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
+}
+
+// all
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+    
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 3), 0.5);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main {
+    // FOOTER STICK TO THE BOTTOM ALWAYS
+    min-height: calc(100vh - 60px);
+    
+    padding: 4rem;
+    
+    .icons {
+        margin-top: 1rem;
+        
+        a {
+            padding: 0.4rem;
+
+            // facebook icon
+            &:nth-child(1) {
+                color: #163679;
+            }
+            
+            // linkedin icon
+            &:nth-child(2) {
+                color: rgb(0, 127, 196);
+            }
+            
+            // github icon
+            &:nth-child(3) {
+                color: #451a86;
+            }
+            
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
 }
 
 // Always this at the bottom!!!!

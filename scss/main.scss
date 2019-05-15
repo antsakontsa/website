@@ -1,13 +1,17 @@
 @import 'config';
 @import 'menu';
 
+body, html {
+    height: 100%;
+}
+
 // index.html
 main#home {
     overflow: hidden;
     
-    // .lg-heading {
-    //     padding-top: 20vh;
-    // }
+    .lg-heading {
+        padding-top: 20vh;
+    }
 }
 
 // about.html

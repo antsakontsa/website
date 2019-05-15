@@ -92,8 +92,6 @@
 
 main#home {
   overflow: hidden; }
-  main#home .lg-heading {
-    padding-top: 20vh; }
 
 .about-info {
   display: grid;

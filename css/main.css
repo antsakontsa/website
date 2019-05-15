@@ -92,8 +92,6 @@
 
 main#home {
   overflow: hidden; }
-  main#home .lg-heading {
-    padding-top: 20vh; }
 
 .about-info {
   display: grid;
@@ -171,9 +169,6 @@ main#home {
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
-
-html {
-  height: auto; }
 
 * {
   box-sizing: border-box; }

@@ -5,9 +5,9 @@
 main#home {
     overflow: hidden;
     
-    .lg-heading {
-        padding-top: 20vh;
-    }
+    // .lg-heading {
+    //     padding-top: 20vh;
+    // }
 }
 
 // about.html
@@ -125,10 +125,6 @@ main#home {
 }
 
 // all
-html {
-    height: auto;
-}
-
 * {
     box-sizing: border-box;
 }

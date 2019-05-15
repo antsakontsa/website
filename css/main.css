@@ -129,6 +129,11 @@ main#home {
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
+  .projects .arrow-down {
+    float: right; }
+  .projects .arrow-up {
+    float: right;
+    display: none; }
 
 .boxes {
   display: flex;

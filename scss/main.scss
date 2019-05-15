@@ -4,6 +4,10 @@
 // index.html
 main#home {
     overflow: hidden;
+    
+    .lg-heading {
+        padding-top: 20vh;
+    }
 }
 
 // about.html
@@ -169,7 +173,6 @@ main {
     
     .icons {
         margin-top: 1rem;
-        margin-bottom: 20vh;
         
         a {
             padding: 0.4rem;

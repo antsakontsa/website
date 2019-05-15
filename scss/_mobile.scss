@@ -60,7 +60,6 @@
             margin-top: 3rem;
             align-items: center;
             text-align: center;
-            font-size: 90px;
             line-height: 1;
             margin-bottom: 5rem;
             
@@ -120,7 +119,6 @@
         .lg-heading {
             align-items: center;
             text-align: center;
-            font-size: 70px;
             line-height: 1;
             margin-top: 3rem;
             margin-bottom: 5rem;
@@ -133,10 +131,6 @@
 
     // index.html
     main#home {
-        .lg-heading{
-            font-size: 80px;
-        }
-
         .icons {
             text-align: center;
         }
@@ -234,10 +228,6 @@
 
     // index.html /////
     main#home {
-        .lg-heading {
-            margin-top: 10vh;
-        }
-
         .icons {
             text-align: center;
         }

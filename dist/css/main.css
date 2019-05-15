@@ -92,6 +92,8 @@
 
 main#home {
   overflow: hidden; }
+  main#home .lg-heading {
+    padding-top: 20vh; }
 
 .about-info {
   display: grid;
@@ -218,8 +220,7 @@ main {
   min-height: calc(100vh - 60px);
   padding: 4rem; }
   main .icons {
-    margin-top: 1rem;
-    margin-bottom: 20vh; }
+    margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:nth-child(1) {
@@ -258,7 +259,6 @@ main {
     margin-top: 3rem;
     align-items: center;
     text-align: center;
-    font-size: 90px;
     line-height: 1;
     margin-bottom: 5rem; }
     main#contact .lg-heading div {
@@ -283,14 +283,11 @@ main {
   main#contact .lg-heading {
     align-items: center;
     text-align: center;
-    font-size: 70px;
     line-height: 1;
     margin-top: 3rem;
     margin-bottom: 5rem; }
   main#contact div {
     font-size: 24px; }
-  main#home .lg-heading {
-    font-size: 80px; }
   main#home .icons {
     text-align: center; }
   main#work .projects {
@@ -339,8 +336,6 @@ main {
     text-align: center; }
   main#contact div {
     font-size: 16px; }
-  main#home .lg-heading {
-    margin-top: 10vh; }
   main#home .icons {
     text-align: center; }
   main#work .projects {

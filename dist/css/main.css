@@ -261,8 +261,8 @@ main {
     text-align: center;
     line-height: 1;
     margin-bottom: 5rem; }
-    main#contact .lg-heading div {
-      font-size: 33px; }
+  main#contact div {
+    font-size: 33px; }
   main#work .projects {
     grid-template-columns: repeat(3, 1fr); }
   main .lg-heading {

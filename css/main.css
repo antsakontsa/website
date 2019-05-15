@@ -90,8 +90,13 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+body, html {
+  height: 100%; }
+
 main#home {
   overflow: hidden; }
+  main#home .lg-heading {
+    padding-top: 20vh; }
 
 .about-info {
   display: grid;

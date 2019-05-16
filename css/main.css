@@ -91,7 +91,7 @@
   transition-delay: 0.4s; }
 
 main#about {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   padding: 4rem; }
   main#about .about-info {
     display: grid;
@@ -121,7 +121,7 @@ main#about {
         text-transform: uppercase; }
 
 main#contact {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   padding: 4rem; }
   main#contact .boxes {
     display: flex;
@@ -137,8 +137,8 @@ main#contact {
       transition: all 0.5s ease-out; }
 
 main#home {
-  overflow: hidden;
   min-height: 100vh;
+  overflow: hidden;
   padding: 4rem; }
   main#home .lg-heading {
     padding-top: 20vh; }
@@ -157,7 +157,7 @@ main#home {
         transition: all 0.5s ease-out; }
 
 main#work {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   padding: 4rem; }
   main#work .projects {
     display: grid;
@@ -271,8 +271,6 @@ footer {
     margin-bottom: 5rem; }
   main#contact div {
     font-size: 33px; }
-  main#home {
-    min-height: 100vh; }
   main#work .projects {
     grid-template-columns: repeat(3, 1fr); }
   main .lg-heading {

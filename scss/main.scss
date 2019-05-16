@@ -177,13 +177,13 @@ header {
 main#about,
 main#work,
 main#contact {
-    // FOOTER STICK TO THE BOTTOM ALWAYS
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
     padding: 4rem;
 }
 
 main#home {
     min-height: 100vh;
+    max-height: 100vh;
     padding: 4rem;
 
     .icons {

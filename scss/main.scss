@@ -3,7 +3,7 @@
 
 // about.html
 main#about {
-    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    min-height: 100vh; // FOOTER STICK TO THE BOTTOM ALWAYS
     padding: 4rem;
     
     .about-info {
@@ -54,7 +54,7 @@ main#about {
 
 //contact.html
 main#contact {
-    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    min-height: 100vh; // FOOTER STICK TO THE BOTTOM ALWAYS
     padding: 4rem;
     
     .boxes {
@@ -77,8 +77,8 @@ main#contact {
 
 // index.html
 main#home {
-    overflow: hidden;
     min-height: 100vh;
+    overflow: hidden;
     padding: 4rem;
     
     .lg-heading {
@@ -116,7 +116,7 @@ main#home {
 
 // work.html
 main#work {
-    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    min-height: 100vh; // FOOTER STICK TO THE BOTTOM ALWAYS
     padding: 4rem;
     
     .projects {

@@ -174,17 +174,23 @@ header {
     color: $secondary-color;
 }
 
-main {
+main#about,
+main#work,
+main#contact {
     // FOOTER STICK TO THE BOTTOM ALWAYS
     min-height: calc(100vh - 60px);
     padding: 4rem;
-    
+}
+
+main#home {
+    min-height: 100vh;
+    padding: 4rem;
+
     .icons {
         margin-top: 1rem;
         
         a {
             padding: 0.4rem;
-
             // facebook icon
             &:nth-child(1) {
                 color: #163679;

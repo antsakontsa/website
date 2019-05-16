@@ -271,6 +271,8 @@ footer {
     margin-bottom: 5rem; }
   main#contact div {
     font-size: 33px; }
+  main#home {
+    min-height: 100vh; }
   main#work .projects {
     grid-template-columns: repeat(3, 1fr); }
   main .lg-heading {

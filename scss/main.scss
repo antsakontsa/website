@@ -182,6 +182,7 @@ main#contact {
 }
 
 main#home {
+    min-height: calc(100vh);
     padding: 4rem;
 
     .icons {

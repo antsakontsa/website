@@ -91,7 +91,7 @@
   transition-delay: 0.4s; }
 
 main#about {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   padding: 4rem; }
   main#about .about-info {
     display: grid;
@@ -121,7 +121,7 @@ main#about {
         text-transform: uppercase; }
 
 main#contact {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   padding: 4rem; }
   main#contact .boxes {
     display: flex;
@@ -130,15 +130,14 @@ main#contact {
     align-items: center;
     margin-top: 1rem; }
     main#contact .boxes div {
-      font-size: 2rem;
       border: 3px #fff solid;
       padding: 1.5rem 2.5rem;
       margin-bottom: 3rem;
       transition: all 0.5s ease-out; }
 
 main#home {
-  min-height: 100vh;
   overflow: hidden;
+  min-height: 100vh;
   padding: 4rem; }
   main#home .lg-heading {
     padding-top: 20vh; }
@@ -157,7 +156,7 @@ main#home {
         transition: all 0.5s ease-out; }
 
 main#work {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   padding: 4rem; }
   main#work .projects {
     display: grid;
@@ -246,6 +245,8 @@ footer {
     margin-top: 2rem;
     margin-bottom: 6rem;
     text-align: center; }
+  main#contact .boxes div {
+    font-size: 2rem; }
   main#work .projects {
     grid-template-columns: repeat(4, 1fr); }
   main .lg-heading {
@@ -269,8 +270,8 @@ footer {
     text-align: center;
     line-height: 1;
     margin-bottom: 5rem; }
-  main#contact div {
-    font-size: 33px; }
+  main#contact .boxes div {
+    font-size: 1.5rem; }
   main#work .projects {
     grid-template-columns: repeat(3, 1fr); }
   main .lg-heading {
@@ -340,8 +341,8 @@ footer {
     margin-top: 3rem;
     margin-bottom: 4rem;
     text-align: center; }
-  main#contact div {
-    font-size: 16px; }
+  main#contact .boxes div {
+    font-size: 0.9rem; }
   main#home {
     min-height: 100vh; }
     main#home .icons {

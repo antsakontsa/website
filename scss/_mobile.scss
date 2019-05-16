@@ -7,6 +7,10 @@
             margin-bottom: 6rem;
             text-align: center;
         }
+
+        .boxes div {
+            font-size: 2rem;
+        }
     } 
 
     // work.html
@@ -65,8 +69,8 @@
             
         }    
         
-        div {
-            font-size: 33px;
+        .boxes div {
+            font-size: 1.5rem;
         }
     }
 
@@ -219,9 +223,9 @@
             margin-bottom: 4rem;
             text-align: center;
         }
-        
-        div {
-            font-size: 16px;
+
+        .boxes div {
+            font-size: 0.9rem;
         }
     }
 

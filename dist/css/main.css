@@ -228,7 +228,7 @@ main#contact {
   padding: 4rem; }
 
 main#home {
-  min-height: calc(100vh + 60px);
+  min-height: calc(100vh - 60px);
   padding: 4rem; }
   main#home .icons {
     margin-top: 1rem; }

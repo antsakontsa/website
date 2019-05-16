@@ -221,20 +221,26 @@ header {
 .text-secondary {
   color: #eece1a; }
 
-main {
+main#about,
+main#work,
+main#contact {
   min-height: calc(100vh - 60px);
   padding: 4rem; }
-  main .icons {
+
+main#home {
+  min-height: 100vh;
+  padding: 4rem; }
+  main#home .icons {
     margin-top: 1rem; }
-    main .icons a {
+    main#home .icons a {
       padding: 0.4rem; }
-      main .icons a:nth-child(1) {
+      main#home .icons a:nth-child(1) {
         color: #163679; }
-      main .icons a:nth-child(2) {
+      main#home .icons a:nth-child(2) {
         color: #007fc4; }
-      main .icons a:nth-child(3) {
+      main#home .icons a:nth-child(3) {
         color: #451a86; }
-      main .icons a:hover {
+      main#home .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
 

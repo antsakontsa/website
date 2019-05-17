@@ -90,24 +90,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-#scroll-top {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 10px;
-  font-size: 26px;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  color: #333;
-  cursor: pointer;
-  outline: none;
-  border: 3px solid #333;
-  border-radius: 50%; }
-  #scroll-top:hover, #scroll-top:focus {
-    background: #333;
-    color: #fff; }
-
 main#about {
   min-height: calc(100vh - 60px);
   padding: 4rem; }
@@ -202,7 +184,8 @@ main#work {
     main#work .projects .desc-text {
       display: none; }
       main#work .projects .desc-text h3 {
-        padding-top: 2rem;
+        border-top: 1px solid black;
+        padding-top: 1rem;
         text-align: center; }
     main#work .projects .btn-dark {
       background: black;
@@ -225,6 +208,24 @@ a {
 
 .text-secondary {
   color: #eece1a; }
+
+#scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%; }
+  #scroll-top:hover, #scroll-top:focus {
+    background: #333;
+    color: #fff; }
 
 header {
   position: fixed;

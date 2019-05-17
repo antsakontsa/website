@@ -1,27 +1,6 @@
 @import 'config';
 @import 'menu';
 
-#scroll-top {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 10px;
-    font-size: 26px;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    color:#333;
-    cursor: pointer;
-    outline: none;
-    border: 3px solid #333;
-    border-radius: 50%;
-
-    &:hover, &:focus {
-        background: #333;
-        color:#fff;
-    }
-}
-
 // about.html
 main#about {
     min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
@@ -180,7 +159,8 @@ main#work {
             display: none;
             
             h3 {
-                padding-top: 2rem;
+                border-top: 1px solid black;
+                padding-top: 1rem;
                 text-align: center;
             }
         }
@@ -218,6 +198,29 @@ a {
 
 .text-secondary {
     color: $secondary-color;
+}
+
+// this appear bottom-right corner at certain point when scroll down
+// (About and work pages)
+#scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color:#333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+        background: #333;
+        color:#fff;
+    }
 }
 
 header {

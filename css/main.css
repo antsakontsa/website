@@ -1,5 +1,5 @@
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -226,15 +226,15 @@ a {
     color: #fff; }
 
 header {
-  position: fixed;
   z-index: 2;
   width: 100%; }
   header .flags {
-    position: fixed;
-    top: 1.5rem;
-    left: 1rem; }
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem; }
   header .flags img {
-    width: 1.2rem; }
+    padding-left: 0.5rem;
+    width: 2rem; }
 
 body {
   background-color: #444;

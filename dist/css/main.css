@@ -231,8 +231,8 @@ header {
   width: 100%; }
   header .flags {
     position: fixed;
-    bottom: 15px;
-    left: 10px; }
+    top: 1.5rem;
+    left: 1rem; }
   header .flags img {
     width: 1.2rem; }
 

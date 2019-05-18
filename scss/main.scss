@@ -232,8 +232,13 @@ header {
     }
     
     .flags img {
-        padding-left: 0.5rem;
+        margin-left: 0.5rem;
         width: 2rem;
+        padding: 3px;
+
+        &:hover {
+            border: 2px solid #fff;
+        }
     }
 }
 

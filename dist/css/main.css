@@ -233,8 +233,11 @@ header {
     top: 2rem;
     left: 3.5rem; }
   header .flags img {
-    padding-left: 0.5rem;
-    width: 2rem; }
+    margin-left: 0.5rem;
+    width: 2rem;
+    padding: 3px; }
+    header .flags img:hover {
+      border: 2px solid #fff; }
 
 body {
   background-color: #444;

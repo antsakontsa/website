@@ -225,6 +225,16 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
+
+    .flags {
+        position: fixed;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    .flags img {
+        width: 1.2rem;
+    }
 }
 
 body {

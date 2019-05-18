@@ -1,7 +1,7 @@
 // Button which appear to the right corner of the screen in about,
 // and work pages
 
-// When certain PointerEvent, button appear / disappear
+// button appear / disappear
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {

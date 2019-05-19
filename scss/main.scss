@@ -22,7 +22,6 @@ main#about {
         
         .bio {
             grid-area: bio;
-            font-size: 1.5rem;
         }
         
         .job-1 {
@@ -201,13 +200,14 @@ a {
 // this appear bottom-right corner at certain point when scroll down
 // (About and work pages)
 #scroll-top {
+    text-align: center;
     display: none;
     position: fixed;
-    bottom: 30px;
-    right: 10px;
-    font-size: 26px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.8rem;
+    right: 0.5rem;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem;
     background: #fff;
     color:#333;
     cursor: pointer;

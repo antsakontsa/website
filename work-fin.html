@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- this button appear to the right bottom corner when scroll down the page enough -->
+    <!-- TÄMÄ NAPPI ILMESTYY OIKEAAN ALANURKKAAN KUN SIVUA ON RULLATTU TARPEEKSI ALAS -->
     <button id="scroll-top"><i class="fas fa-angle-double-up"></i></button>
 
     <header>
@@ -59,18 +59,18 @@
         <h2 class="sm-heading">Tässä ovat projektini...</h2>
 
         <div class="projects">
-            <!-- WHEN YOU NEED NEW PROJECT ON SITE, COPY THIS WHOLE DIV UNDERNEATH THIS COMMENT AND MAKE ALL CHANGES YOU NEED IMG, TXT ETC.-->
+            <!-- KUN TARVITSET UUDEN PROJEKTIN, KOPIOI KOKO DIV TÄMÄN KOMMENTIN ALAPUOLELTA JA TEE SIIHEN TARVITTAVAT MUUTOKSET KUVA, TEKSTI JNE. -->
             <!--
-                AFTER ALL CHANGES HAVE BEEN MADE, YOU ADD TO THE TERMINAL THESE:
+                KUN KAIKKI MUUTOKSET ON TEHTY, LISÄTÄÄN NÄMÄ KOMENNOT TERMINAALIIN:
                 git add .
                 git commit -m 'Added new project'
                 git push origin master
                 npm run deploy
             -->
-
             <div class="item">
-                <!-- Image size 400px x 400px -->
-                <!-- Use GIMP for resizing -->
+                <!-- THIS WEBSITE ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
                 <img src="img/projects/website-resize.jpg">
 
                 <a class="btn-light">
@@ -90,10 +90,16 @@
                         </ul>
 
                         <h4><b>Tarkoitus</b></h4>
-                        <p>Purpose of this project was that, I needed a website
-                            to gather all my projects together and also I wanted to have a basic understanding of SCSS,
-                            so I bring those two things together for this purpose.
-                        </p>
+                        <p>Tarvitsin kotisivut, johon saan koottua yhteen kaikki projektini ja samalla saada
+                            perusymmärrystä SCSS:stä, frontend-puolen työkaluna.</p>
+                        <p>Toin siis nuo kaksi asiaa yhteen tämän projektin muodossa.</p>
+
+                        <!-- JOS PROJEKTISSA ON PELKÄSTÄÄN FRONTEND:iä, TÄMÄ VOIDAAN JÄTTÄÄ POIS/POISTAA! -->
+                        <!-- <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat
+                            nähdä visuaalisesti kyseisen sivun ja testata sen toiminnallisuutta.</p>-->
                     </div>
                 </a>
 
@@ -104,8 +110,9 @@
             </div>
 
             <div class="item">
-                <!-- Image size 400px x 400px -->
-                <!-- Use GIMP for resizing -->
+                <!-- LOGIN SYSTEM ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
                 <img src="img/projects/login-resize.jpg">
 
                 <a class="btn-light">
@@ -115,7 +122,7 @@
                     <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
 
                     <div class="desc-text">
-                        <h3><b>Tämä Sivusto</b></h3>
+                        <h3><b>Rekisteröinti ja Sisäänkirjautuminen</b></h3>
                         <p><b>Tehty käyttäen:</b></p>
                         <ul>
                             <li>HTML</li>
@@ -125,10 +132,15 @@
                         </ul>
 
                         <h4><b>Tarkoitus</b></h4>
-                        <p>Purpose of this project was that, I needed a website
-                            to gather all my projects together and also I wanted to have a basic understanding of SCSS,
-                            so I bring those two things together for this purpose.
-                        </p>
+                        <p>Halusin tehdä jonkun käytännönläheisen web projektin PHP:llä. Nykyään useilla
+                            nettisivuilla on kirjautumis-systeemi, joten ajattelin sen olevan hyvä aihe
+                            käytännönläheisyyden näkökulmasta.</p>
+
+                        <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat nähdä visuaalisesti kyseisen projektin
+                            ja testata sen toiminnallisuutta.</p>
                     </div>
                 </a>
 
@@ -143,11 +155,11 @@
         Kopiointioikeus &copy; <span id="year"></span> Antti Kuisma
     </footer>
 
-    <!-- SCRIPTS -->
+    <!-- SKRIPTIT -->
     <script src="js/main.js"></script>
-    <script src="js/scroll.js"></script> <!-- Scroll to top button -->
-    <script src="js/year.js"></script> <!-- Footer year -->
-    <script src="js/click.js"></script> <!-- Show/hide project description texts -->
+    <script src="js/scroll.js"></script> <!-- TAKAISIN YLÖS NAPPULA -->
+    <script src="js/year.js"></script> <!-- FOOTER VUOSILUKU -->
+    <script src="js/click.js"></script> <!-- NÄYTÄ/PIILOTA PROJEKTIN KUVATEKSTI -->
 </body>
 
 </html>

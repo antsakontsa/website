@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "portfolio",
     "version": "1.0.0",
     "description": "",
@@ -15,3 +16,21 @@
         "node-sass": "^4.12.0"
     }
 }
+=======
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://antsakontsa.github.io/portfolio/",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Antti Kuisma",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0"
+  }
+}
+>>>>>>> 9531900b2b76d2dcd4e612ff7b7a854af8e1724e

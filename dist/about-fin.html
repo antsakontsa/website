@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+    <title>Tietoa minusta</title>
+</head>
+
+<body>
+    <!-- TÄMÄ NAPPI ILMESTYY OIKEAAN ALANURKKAAN KUN SIVUA ON RULLATTU TARPEEKSI ALAS -->
+    <button id="scroll-top"><i class="fas fa-angle-double-up"></i></button>
+
+    <header>
+        <div class="flags">
+            <a href="about-fin.html"><img src="img/fin-flag.jpg"></a>
+            <a href="about.html"><img src="img/eng-flag.jpg"></a>
+        </div>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index-fin.html" class="nav-link">Etusivu</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="about-fin.html" class="nav-link">Tietoa minusta</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work-fin.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact-fin.html" class="nav-link">Ota yhteyttä</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="about">
+        <h1 class="lg-heading">
+            Tietoa <span class="text-secondary">Minusta</span>
+        </h1>
+
+        <h2 class="sm-heading">Kerron itsestäni jotain...</h2>
+
+        <div class="about-info">
+            <img src="img/portrait.jpg" class="bio-image">
+
+            <div class="bio">
+                <h3 class="text-secondary">BIO</h3>
+
+                <p>Olen intohimoisesti kiinnostunut koodauksesta, mutta nautin myös salilla käymisestä, sekä
+                    frisbeegolfista.
+                </p>
+                <p>Kehitän itseäni jatkuvasti teknologian saralla ja vietän tietokoneella useita tunteja päivässä
+                    oppiakseni sitä.</p>
+                <p>Olen erittäin hyvä tiimipelaaja ja pidän siitä, että ympärilläni on ihmisiä, jotka tukevat
+                    tavoitteitani, mutta olen samalla myös itse valmis auttamaan muita niin paljon kuin voin!</p>
+                <p>Valmistumiseni jälkeen, seuraavan viiden vuoden suunnitelmanani on hankkia asunto ja voida matkustaa
+                    enemmän.</p>
+            </div>
+
+            <div class="job job-1">
+                <h3>Frontend</h3>
+                <hr>
+                <h4>Sivu</h4>
+                <p>Frontend on sivuosassa omassa devauksessani. En ole hirveän hyvä suunnittelemaan sivun asetteluja,
+                    värejä tai kuvia, mutta silti tarpeeksi hyvä voidakseni rakentaa tälläiset yksinkertaiset kotisivut
+                    jos tarve vaatii.
+                </p>
+            </div>
+
+            <div class="job job-2">
+                <h3>Backend</h3>
+                <hr>
+                <h4>Pääasiallinen</h4>
+                <p>Backend on pääasiallinen osa-alueeni devaamisessa. Pidän yhteyksien luomisesta ja niiden ongelmien
+                    ratkomisesta. Olen kiinnostunut ymmärtämään, mitä "pinnan alla" tapahtuu. En voi sanoa, että olisin
+                    siinä (VIELÄ) todella hyvä, mutta tulen kyllä olemaan!</p>
+            </div>
+
+            <div class="job job-3">
+                <h3>Fullstack</h3>
+                <hr>
+                <h4>Tulevaisuus</h4>
+                <p>Päämääräni on tulevaisuudessa olla Fullstack devaaja. Suosin enemmän Backend puolta, mutta haluan
+                    silti oppia Frontend puoltakin, ja pystyä hallitsemaan (vähintäänkin ymmärtämään) sen uusimmat
+                    tekniikat.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Kopiointioikeus &copy; <span id="year"></span> Antti Kuisma
+    </footer>
+
+    <!-- SKRIPTIT -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script> <!-- TAKAISIN YLÖS NAPPULA -->
+    <script src="js/year.js"></script> <!-- FOOTER VUOSILUKU -->
+</body>
+
+</html>

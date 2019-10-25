@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+    <title>Katsele töitäni</title>
+</head>
+
+<body>
+    <!-- TÄMÄ NAPPI ILMESTYY OIKEAAN ALANURKKAAN KUN SIVUA ON RULLATTU TARPEEKSI ALAS -->
+    <button id="scroll-top"><i class="fas fa-angle-double-up"></i></button>
+
+    <header>
+        <div class="flags">
+            <a href="work-fin.html"><img src="img/fin-flag.jpg"></a>
+            <a href="work.html"><img src="img/eng-flag.jpg"></a>
+        </div>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index-fin.html" class="nav-link">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-fin.html" class="nav-link">Tietoa minusta</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="work-fin.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact-fin.html" class="nav-link">Ota yhteyttä</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="work">
+        <h1 class="lg-heading">
+            <span class="text-secondary">Portfolio</span>
+        </h1>
+
+        <h2 class="sm-heading">Tässä ovat projektini...</h2>
+
+        <div class="projects">
+            <!-- KUN TARVITSET UUDEN PROJEKTIN, KOPIOI KOKO DIV TÄMÄN KOMMENTIN ALAPUOLELTA JA TEE SIIHEN TARVITTAVAT MUUTOKSET KUVA, TEKSTI JNE. -->
+            <!--
+                KUN KAIKKI MUUTOKSET ON TEHTY, LISÄTÄÄN NÄMÄ KOMENNOT TERMINAALIIN:
+                git add .
+                git commit -m 'Added new project'
+                git push origin master
+                npm run deploy
+            -->
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
+                <img src="img/projects/website.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Projekti kuvaus</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Tämä Sivusto</b></h3>
+                        <p><b>Tehty käyttäen:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+
+                        <h4><b>Tarkoitus</b></h4>
+                        <p>Tarvitsin kotisivut, johon saan koottua yhteen kaikki projektini ja samalla saada
+                            perusymmärrystä SCSS:stä, frontend-puolen työkaluna.</p>
+                        <p>Toin siis nuo kaksi asiaa yhteen tämän projektin muodossa.</p>
+
+                        <!-- JOS PROJEKTISSA ON PELKÄSTÄÄN FRONTEND:iä, TÄMÄ VOIDAAN JÄTTÄÄ POIS/POISTAA! -->
+                        <!-- <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat
+                            nähdä visuaalisesti kyseisen sivun ja testata sen toiminnallisuutta.</p>-->
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/portfolio" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/frisbee_caddy.jpg.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Projekti kuvaus</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>FrisBee Caddy</b></h3>
+                        <p><b>Tehty käyttäen:</b></p>
+                        <ul>
+                            <li>Java</li>
+                            <li>XML</li>
+                        </ul>
+
+                        <h4><b>Tarkoitus</b></h4>
+
+                        <p>En löytänyt hyvää frisbeegolf app:ia, jolla pitäisin pisteitä ylhäällä, joten päätin tehdä oman.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/FrisBee-Caddy" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- LOGIN SYSTEM ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
+                <img src="img/projects/login.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Projekti kuvaus</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Rekisteröinti ja Sisäänkirjautuminen</b></h3>
+                        <p><b>Tehty käyttäen:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+
+                        <h4><b>Tarkoitus</b></h4>
+                        <p>Halusin tehdä jonkun käytännönläheisen web projektin PHP:llä. Nykyään useilla
+                            nettisivuilla on sisäänkirjautumis-systeemi, joten ajattelin sen olevan hyvä aihe
+                            käytännönläheisyyden näkökulmasta.</p>
+
+                        <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat nähdä visuaalisesti kyseisen
+                            projektin ja testata sen toiminnallisuutta.</p>
+                        <p>En tehnyt sivulle oikeaa kotisivu sisältöä, mutta kuitenkin sen verran, että käyttäjä näkee
+                            rekisteröinti/sisäänkirjautuminen/uloskirjautuminen, oikeasti toimivan.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/loginsystem" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
+                <img src="img/projects/iss.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Projekti kuvaus</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Kainsainvälinen Avaruusasema</b></h3>
+                        <p><b>Tehty käyttäen:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                        </ul>
+
+                        <h4><b>Tarkoitus</b></h4>
+                        <p>Halusin opetella JSON ja API käyttöä.</p>
+                        <p>API seuraa Kainsaivälinen avaruusasema (ISS) ja näyttää sen sijainnin Google Maps karttapalvelussa.</p>
+
+                        <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat
+                            nähdä visuaalisesti kyseisen sivun ja testata sen toiminnallisuutta.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/international-space-station" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------->
+                <!-- KUVA KOKO 400px x 400px -->
+                <!-- KÄYTÄ KUVAN MUOKKAAMISEEN GIMP -->
+                <img src="img/projects/weather.app.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Projekti kuvaus</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Sää lähellä sinua</b></h3>
+                        <p><b>Tehty käyttäen:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                        </ul>
+
+                        <h4><b>Tarkoitus</b></h4>
+                        <p>Halusin opetella lisää JSON ja API käyttöä.</p>
+                        <p>App:i kysyy käyttäjän lupaa käyttää hänen sijaintiaan. Tämän jälkeen se näyttää missä käyttäjä on, millainen sää siellä on, sekä kuinka lämmintä siellä on</p>
+
+                        <h4><b>HUOM!</b></h4>
+                        <p>Projekti on Github:ssa ja sen ilmaisessa domainissa, joka ei tue backendiä, joten voit
+                            tarkastella vain koodia.</p>
+                        <p>Halutessasi voit kopioida tiedostot itsellesi, jos haluat
+                            nähdä visuaalisesti kyseisen sivun ja testata sen toiminnallisuutta.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/Weather-in-your-location" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+    </main>
+
+    <footer id="main-footer">
+        Kopiointioikeus &copy; <span id="year"></span> Antti Kuisma
+    </footer>
+
+    <!-- SKRIPTIT -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script> <!-- TAKAISIN YLÖS NAPPULA -->
+    <script src="js/year.js"></script> <!-- FOOTER VUOSILUKU -->
+    <script src="js/click.js"></script> <!-- NÄYTÄ/PIILOTA PROJEKTIN KUVATEKSTI -->
+</body>
+
+</html>

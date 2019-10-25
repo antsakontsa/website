@@ -1,0 +1,263 @@
+@import 'config';
+@import 'menu';
+
+// about.html
+main#about {
+    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    padding: 4rem;
+    
+    .about-info {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas:
+        'bioimage bio bio'
+        'job1 job2 job3';
+        grid-template-columns: repeat(3, 1fr);
+        
+        .bio-image {
+            grid-area: bioimage;
+            margin: auto;
+            border: $secondary-color 3px solid;
+        }
+        
+        .bio {
+            grid-area: bio;
+        }
+        
+        .job-1 {
+            grid-area: job1;
+        }
+        
+        .job-2 {
+            grid-area: job2;
+        }
+        
+        .job-3 {
+            grid-area: job3;
+        }
+        
+        .job {
+            background: lighten($primary-color, 5);
+            padding: 0.5rem;
+            border-bottom: $secondary-color 5px solid;
+            
+            h3 {
+                text-align: center;
+                color: $secondary-color;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+//contact.html
+main#contact {
+    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    padding: 4rem;
+    
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
+        
+        div {
+            border: 3px #fff solid;
+            @include easeOut;
+        }
+    }
+}
+
+
+// index.html
+main#home {
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 4rem;
+    
+    .lg-heading {
+        padding-top: 20vh;
+    }
+
+    .icons {
+        margin-top: 1rem;
+        
+        a {
+            padding: 0.4rem;
+            // facebook icon
+            &:nth-child(1) {
+                color: #163679;
+            }
+            
+            // linkedin icon
+            &:nth-child(2) {
+                color: rgb(0, 127, 196);
+            }
+            
+            // github icon
+            &:nth-child(3) {
+                color: #451a86;
+            }
+            
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+}
+
+
+// work.html
+main#work {
+    min-height: calc(100vh - 60px); // FOOTER STICK TO THE BOTTOM ALWAYS
+    padding: 4rem;
+    
+    .projects {
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns: repeat(3, 1fr);
+        
+        img {
+            width: 100%;
+            border: 3px #fff solid;
+        }
+
+        .arrow-down {
+            float: right;
+        }
+        
+        .arrow-up {
+            float: right;
+            display: none;
+        }
+
+        .btn {
+            display: block;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.3rem;
+            
+            &:hover {
+                background: $secondary-color;
+                color: set-text-color($secondary-color);
+                @include easeOut;
+            }
+        }
+        
+        .btn-light {
+            @extend .btn;
+            background: lighten($primary-color, 50);
+            color: #333;
+        }
+        
+        .desc-text {
+            display: none;
+            
+            h3 {
+                border-top: 1px solid black;
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+        
+        .btn-dark {
+            @extend .btn;
+            background: darken($primary-color, 50);
+            color: #fff;
+        }
+
+    }
+}
+
+
+// all
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+    
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 3), 0.5);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+// this appear bottom-right corner at certain point when scroll down
+// (About and work pages)
+#scroll-top {
+    text-align: center;
+    display: none;
+    position: fixed;
+    bottom: 1.8rem;
+    right: 0.5rem;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    color:#333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+        background: #333;
+        color:#fff;
+    }
+}
+
+header {
+    z-index: 2;
+    width: 100%;
+
+    .flags {
+        position: absolute;
+        top: 2rem;
+        left: 3.5rem;
+    }
+    
+    .flags img {
+        margin-left: 0.5rem;
+        width: 2rem;
+        padding: 3px;
+
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
+}
+
+body {
+    @include background;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+// Always this at the bottom!!!!
+@import 'mobile';

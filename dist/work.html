@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+    <title>View My Work</title>
+</head>
+
+<body>
+    <!-- THIS BUTTON APPEAR TO THE RIGHT BOTTOM CORNER WHEN SCROLL DOWN THE PAGE ENOUGH -->
+    <button id="scroll-top"><i class="fas fa-angle-double-up"></i></button>
+
+    <header>
+        <div class="flags">
+            <a href="work-fin.html"><img src="img/fin-flag.jpg"></a>
+            <a href="work.html"><img src="img/eng-flag.jpg"></a>
+        </div>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="work.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="work">
+        <h1 class="lg-heading">
+            My <span class="text-secondary">Portfolio</span>
+        </h1>
+
+        <h2 class="sm-heading">These are my projects...</h2>
+
+        <div class="projects">
+            <!-- WHEN YOU NEED NEW PROJECT ON SITE, COPY THIS WHOLE DIV UNDERNEATH THIS COMMENT AND MAKE ALL CHANGES YOU NEED IMG, TXT ETC.-->
+            <!--
+                AFTER ALL CHANGES HAVE BEEN MADE, YOU ADD TO THE TERMINAL THESE COMMANDS:
+                git add .
+                git commit -m 'Added new project'
+                git push origin master
+                npm run deploy
+            -->
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/website.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Project desc.</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>This Website</b></h3>
+                        <p><b>Made by using:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+
+                        <h4><b>Purpose</b></h4>
+
+                        <p>I needed a website, where I can gather all my projects and at the same time get a basic
+                            understanding of SCSS as a frontend tool.</p>
+                        <p>I brought those two things together in a form of this project.</p>
+
+                        <!-- IF A PROJECT CONSIDER ONLY FRONTEND, THIS TEXT CAN BE LEFT OUT/DELETE! -->
+                        <!-- <h4><b>DM!</b></h4>
+                        <p>Project is in Github and in its own free domain, which don't support backend, so you can only
+                            prospect the code.</p>
+                        <p>If you want, you can download files for yourself and check, how the project looks like
+                            visually and test its functionality.</p> -->
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/portfolio" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- THIS WEBSITE ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/frisbee_caddy.jpg.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Project desc.</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>FrisBee Caddy</b></h3>
+                        <p><b>Made by using:</b></p>
+                        <ul>
+                            <li>Java</li>
+                            <li>XML</li>
+                        </ul>
+
+                        <h4><b>Purpose</b></h4>
+
+                        <p>I couldn't find any good app to keep scores while playing disc golf, so I decided, that I do my own.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/FrisBee-Caddy" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- LOGIN SYSTEM ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/login.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Project desc.</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Register and Login</b></h3>
+                        <p><b>Made by using:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+
+                        <h4><b>Purpose</b></h4>
+                        <p>I wanted to do a practical web project with PHP. Nowdays many websites has login system, so I
+                            thought that would be good consider about a practical point of view.</p>
+
+                        <h4><b>DM!</b></h4>
+                        <p>Project is in Github and in its own free domain, which don't support backend, so you can only
+                            prospect the code.</p>
+                        <p>If you want, you can download files for yourself and check, how the project looks like
+                            visually and test its functionality.</p>
+                        <p>I didn't make real website content for this project, but enough for a user to see that
+                            register/login/logout really works.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/loginsystem" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- LOGIN SYSTEM ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/iss.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Project desc.</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>International Space Station</b></h3>
+                        <p><b>Made by using:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                        </ul>
+
+                        <h4><b>Purpose</b></h4>
+                        <p>I wanted to learn usage of JSON and API.</p>
+                        <p>API follows International space station (ISS) and displays its location at Google Maps map service.</p>
+
+                        <h4><b>DM!</b></h4>
+                        <p>Project is in Github and in its own free domain, which don't support backend, so you can only
+                            prospect the code.</p>
+                        <p>If you want, you can download files for yourself and check, how the project looks like
+                            visually and test its functionality.</p>
+                        <p>I didn't make real website content for this project, but enough for a user to see that
+                            register/login/logout really works.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/international-space-station" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <!-- LOGIN SYSTEM ---------------------------------------------------------------------------------------------------------------->
+                <!-- IMAGE SIZE 400px x 400px -->
+                <!-- USE GIMP FOR RESIZING -->
+                <img src="img/projects/weather.app.png">
+
+                <a class="btn-light">
+                    <i class="fas fa-eye"></i>
+                    <span class="desc-span-text">Project desc.</span>
+                    <span class="arrow-down"><i class="fas fa-angle-down"></i></span>
+                    <span class="arrow-up"><i class="fas fa-angle-up"></i></span>
+
+                    <div class="desc-text">
+                        <h3><b>Weather near you</b></h3>
+                        <p><b>Made by using:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                        </ul>
+
+                        <h4><b>Purpose</b></h4>
+                        <p>I wanted to learn more usage of JSON and API.</p>
+                        <p>App asks users permission to use your location, and shows where user is, what is the weather like and how warm there is.</p>
+
+                        <h4><b>DM!</b></h4>
+                        <p>Project is in Github and in its own free domain, which don't support backend, so you can only
+                            prospect the code.</p>
+                        <p>If you want, you can download files for yourself and check, how the project looks like
+                            visually and test its functionality.</p>
+                        <p>I didn't make real website content for this project, but enough for a user to see that
+                            register/login/logout really works.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/antsakontsa/Weather-in-your-location" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+    </main>
+
+    <footer>
+        Copyright &copy; <span id="year"></span> Antti Kuisma
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script> <!-- SCROLL TO THE TOP BUTTON -->
+    <script src="js/year.js"></script> <!-- FOOTER YEAR -->
+    <script src="js/click.js"></script> <!-- SHOW/HIDE PROJECT DESCRIPTION TEXTS -->
+</body>
+
+</html>

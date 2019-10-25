@@ -167,7 +167,7 @@ main#about .about-info {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+      grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -471,7 +471,7 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#about .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -517,7 +517,7 @@ footer {
 
 @media screen and (min-width: 631px) and (max-width: 768px) {
   main#about .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -595,7 +595,7 @@ footer {
 
 @media screen and (max-width: 630px) {
   main#about .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
